@@ -26,7 +26,7 @@ tailwind.config = { theme: { extend: {
   .font-display{font-family:"Yeseva One",serif}
   .papel{background:repeating-linear-gradient(90deg,#B5321F 0 18px,#E8A11C 18px 36px,#2E7D4F 36px 54px,#8E2417 54px 72px)}
   .catnav::-webkit-scrollbar{height:0}
-  .menusec{scroll-margin-top:130px}
+  .menusec{scroll-margin-top:205px}
   .lift{transition:transform .2s ease} .lift:hover{transform:translateY(-2px)}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Janitzio | Mexican Cuisine Restaurant","servesCuisine":"Mexican","telephone":"+1-208-459-9660","priceRange":"$$","hasMenu":"https://janitzio-mexican-restaurant.vercel.app/menu.es.html","address":{"@type":"PostalAddress","streetAddress":"313 S Kimball Ave","addressLocality":"Caldwell","addressRegion":"ID","postalCode":"83605"}}</script>
@@ -74,8 +74,9 @@ tailwind.config = { theme: { extend: {
 </section>
 
 <div class="sticky top-[68px] z-30 bg-cream/95 backdrop-blur border-y border-ink/10 shadow-sm">
-  <div class="max-w-6xl mx-auto px-3"><nav class="catnav flex gap-2 overflow-x-auto py-2.5" aria-label="Menu categories"><a href="#beverages" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Bebidas</a><a href="#salads" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Ensaladas</a><a href="#sides" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Sides</a><a href="#specials" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Especiales</a><a href="#fajitas" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Fajitas</a><a href="#seafood" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Mariscos</a><a href="#enchiladas" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Enchiladas</a><a href="#burritos" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Burritos</a><a href="#quesadillas" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Quesadillas</a><a href="#vegetarian" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Vegetariano</a><a href="#nachos" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Nachos</a><a href="#alacarte" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">A La Carta</a><a href="#combos" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Combinaciones</a><a href="#caldos" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Caldos</a></nav></div>
+  <div class="max-w-6xl mx-auto px-3 py-2.5"><div class="flex flex-col gap-2.5"><div class="relative"><span class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-ink/40 pointer-events-none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span><input id="menuSearch" type="text" autocomplete="off" placeholder="Busca en el menú por nombre o ingrediente" aria-label="Buscar en el menú" class="w-full pl-9 pr-9 py-2.5 rounded-full border border-ink/15 bg-white text-[14px] text-ink placeholder-ink/45 focus:outline-none focus:border-chili focus:ring-2 focus:ring-chili/15"><button id="menuClear" type="button" aria-label="Clear" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 w-5 h-5 text-ink/40 hover:text-chili"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><nav class="catnav flex gap-2 overflow-x-auto md:flex-wrap md:overflow-x-visible md:justify-center pr-6 md:pr-0" aria-label="Menu categories"><a href="#beverages" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Bebidas</a><a href="#salads" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Ensaladas</a><a href="#sides" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Sides</a><a href="#specials" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Especiales</a><a href="#fajitas" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Fajitas</a><a href="#seafood" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Mariscos</a><a href="#enchiladas" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Enchiladas</a><a href="#burritos" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Burritos</a><a href="#quesadillas" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Quesadillas</a><a href="#vegetarian" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Vegetariano</a><a href="#nachos" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Nachos</a><a href="#alacarte" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">A La Carta</a><a href="#combos" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Combinaciones</a><a href="#caldos" class="shrink-0 whitespace-nowrap text-[13px] font-semibold px-3.5 py-1.5 rounded-full border border-ink/15 text-ink/75 hover:bg-chili hover:text-cream hover:border-chili transition">Caldos</a></nav></div></div>
 </div>
+<p id="menuNoResults" class="hidden max-w-6xl mx-auto px-5 py-12 text-center text-ink/55">Ningún platillo coincide con tu búsqueda. Prueba con otra palabra, o llama al (208) 459-9660.</p>
 
 <section id="beverages" class="menusec bg-cream border-b border-ink/10">
   <div class="max-w-6xl mx-auto px-5 py-9">
@@ -85,22 +86,22 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     <p class="text-sm text-ink/60 italic mb-2 max-w-3xl leading-snug">También disponibles cerveza de botella, margaritas, vino y micheladas.</p>
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Refrescos de fuente</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$3.00</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Coca, Coca de dieta, Dr. Pepper, Dr. Pepper de dieta, Sprite, Root Beer.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Té helado, café y chocolate caliente</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$3.00</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Té helado sin azúcar recién hecho, leche con chocolate, café y chocolate caliente.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Aguas frescas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$6.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Horchata, jamaica, limonada y agua de mango.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Bebidas embotelladas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$3.00</span>
@@ -116,27 +117,27 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Ensalada de Pollo con Aguacate<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Pollo asado sobre una cama de lechuga, con tomate, queso y aguacate, servido con aderezo de aguacate.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Ensalada de Fajita<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Fajitas de pollo o res, mezcladas con lechuga, aderezo césar y queso. Cambia a fajitas de camarón por $22.95.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Ensalada de Taco<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Cama de lechuga con pollo o res, frijoles, tomate, cebolla, cilantro, queso, aceitunas negras, crema y guacamole. Canasta de tortilla a petición.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Ensalada César con Pollo<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Pollo asado sobre una cama de lechuga romana, con aderezo césar y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Ensalada de la Casa<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$6.95</span>
@@ -152,52 +153,52 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Totopos y Salsa</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$4.00</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">1/2 Totopos y Salsa</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$2.50</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Arroz y Frijoles</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$6.00</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Crema</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$1.50</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Pico de Gallo</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$3.00</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Tortillas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$2.00</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Jalapeño Asado</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$1.00</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Guacamole Chico</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">precio del día</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Guacamole Grande</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">precio del día</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Dip de Frijol</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$2.50</span>
@@ -213,87 +214,87 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Pollo A La Crema</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Salteado con cebolla, pimiento y champiñones, en una cremosa salsa de chipotle, con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Pollo Chipotle</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Salteado con zanahoria, cebolla y pimiento en salsa de chipotle, con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Pollo Poblano</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Salteado con ajo, cebolla y rajas de chile poblano en una salsa cremosa, con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Pollo Borracho</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Salteado con ajo, cebolla, tomate, champiñones, jalapeños y vino blanco en salsa ranchera, gratinado con queso, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Pollo En Mole</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Pollo asado bañado en salsa de mole, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Arroz Con Pollo</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Salteado con cebolla, pimiento, zanahoria y calabacita en salsa ranchera, servido sobre una cama de arroz, gratinado con queso, con frijoles y tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Bistec Ranchero</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Trozos de res salteados con cebolla, tomate, cilantro y jalapeño.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Bistec Ranchero Especial</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Trozos de res salteados con ajo, cebolla, tomate, jalapeño, champiñones, en vino blanco y salsa ranchera, gratinado con queso, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Quesataco</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Tres tacos de birria con queso, con cebolla y cilantro, servidos con un consomé de 5 oz.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Especial Ranchero de Res y Camarón</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$24.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Tiras de res y cuatro camarones grandes salteados con ajo, cebolla, tomate, jalapeño, champiñones, en vino blanco y salsa ranchera, gratinado con queso, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Carne Asada</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Un corte de res asado con cebolla y jalapeño asados, guacamole, pico de gallo y tortillas. Se puede cambiar por pollo.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Chile Colorado</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Trozos de res salteados con cebolla y champiñones en una sabrosa salsa roja, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Chile Verde</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Trozos de puerco cocinados en salsa verde de tomatillo, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Carnitas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Trozos de puerco cocidos a fuego lento y dorados, con guacamole, pico de gallo, jalapeños y tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Relleno Mich</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$17.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Un chile relleno sobre una cama de carne molida, bañado en una salsa cremosa especial, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Chile Relleno</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$14.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Un chile poblano relleno de queso, bañado en salsa ranchera y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Flautas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$14.95</span>
@@ -309,27 +310,27 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     <p class="text-sm text-ink/60 italic mb-2 max-w-3xl leading-snug">Carne a elegir asada con cebolla, pimiento y champiñones, servida en comal de hierro bien caliente. Con arroz, frijoles, crema, guacamole, pico de gallo y tortillas.</p>
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Fajitas de Res</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$23.95</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Fajitas de Pollo</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$23.95</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Fajitas de Camarón</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$25.95</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Fajitas de Puerco</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$23.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Agrega piña.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Fajitas de la Casa</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$29.95</span>
@@ -345,62 +346,62 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Tostada de Ceviche de Camarón<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$8.00</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Camarón cocido en limón, mezclado con tomate, cebolla y cilantro, servido en una tostada crujiente con aguacate.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Caldo de Camarón o Pescado<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Caldo de camarón o pescado con verduras. Servido con limón y tortillas o galletas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Tacos de Pescado</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Dos tortillas de harina grandes con pescado pollock asado, servidas con ensalada de col, pico de gallo y limón.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Chimichanga de Mariscos</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Tortilla de harina rellena de cangrejo y camarón, frita y bañada en una sabrosa salsa blanca.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Coctel de Camarón<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Camarón en una salsa especial con tomate, cebolla, cilantro y aguacate. Servido con galletas y limón.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Camarones Al Mojo De Ajo</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Camarón grande salteado con ajo, cebolla y pimiento, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Camarones A La Diabla</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Camarón grande salteado con cebolla y champiñones en una salsa de chipotle picante, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Camarones Rancheros</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Camarón grande salteado con ajo, cebolla, tomate, jalapeño y champiñones en vino y salsa ranchera, gratinado con queso, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Camarones A La Crema</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Camarón grande salteado con cebolla, pimiento y champiñones en una cremosa salsa de chipotle, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Camarones A La Vallarta<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$22.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Camarón grande y cangrejo salteados con ajo, tomate, cebolla, pimiento, champiñones y jalapeño en vino y salsa ranchera, gratinado con queso, servido con tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchilada de Cangrejo</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Tortilla de harina grande rellena de cangrejo y camarón salteados con pimiento y cebolla, bañada en queso, salsa verde, ranchera y crema.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas de Camarón</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
@@ -416,42 +417,42 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas Mexicanas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Dos fritas en salsa roja, a elegir de pollo, queso o res. Con lechuga, tomate, cebolla, cilantro, crema y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas Suizas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">De queso o pollo, bañadas en salsa blanca y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas Bandera</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$17.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Una de res en salsa roja, una de queso en salsa blanca y una de pollo en salsa verde.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas Rancheras</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Dos de res deshebrada bañadas en salsa ranchera, con lechuga y tomate.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas Verdes</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Dos de pollo bañadas en salsa verde, queso y crema.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas de Mole</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$17.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Dos de pollo bañadas en salsa de mole y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enfrijoladas<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Cuatro de chorizo, bañadas en salsa de frijol, con lechuga, tomate, cebolla, cilantro, crema y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas Michoacanas<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.95</span>
@@ -467,42 +468,42 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Burrito<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$10.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Relleno de pollo deshebrado, carne molida o res deshebrada, frijoles y queso, bañado en salsa roja de enchilada, servido con crema.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Burrito de Frijol y Queso<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$8.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Relleno de frijoles y queso, bañado en salsa de enchilada, servido con crema.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Burrito Grande<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Relleno de pollo o res, lechuga, tomate, cebolla, cilantro, arroz y frijoles, bañado en salsa de enchilada, servido con crema y guacamole.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Fajita Burrito</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$16.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Relleno de fajita de pollo o res, bañado en salsa de enchilada.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Burrito Verde</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$16.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Relleno de puerco en salsa verde de tomatillo, bañado en salsa verde espesa y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Burrito Colorado</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$16.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Relleno de res, champiñones y cebolla en salsa roja, bañado en salsa roja de enchilada.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Burrito Janitzio</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$16.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Relleno de res deshebrada, bañado en salsa ranchera y crema.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Chimichanga</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$18.95</span>
@@ -518,32 +519,32 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Quesadilla de Queso<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$10.50</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Quesadilla de Carne Deshebrada<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$13.95</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Quesadilla de Carne Asada<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$13.95</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Quesadilla de Fajita<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$16.95</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Quesadilla de Birria<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$16.95</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Quesadilla de Camarón o Cangrejo<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$17.95</span>
@@ -559,27 +560,27 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Burrito Vegetariano<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$16.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Tortilla de harina grande rellena de arroz y frijoles, lechuga, tomate, cebolla y cilantro, bañada en salsa ranchera y queso. Servida con guacamole y crema.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchiladas Vegetarianas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Dos rellenas a elegir de papa, queso o frijol, con lechuga, tomate, cebolla, cilantro, crema y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enfrijoladas<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$19.50</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Cuatro rellenas, bañadas en salsa de frijol, con lechuga, tomate, cebolla, cilantro, crema y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Taquitos de Papa</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$14.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Tres taquitos de maíz rellenos de papa, fritos, con lechuga, tomate, cebolla, cilantro, crema y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Fajitas Vegetarianas</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$23.95</span>
@@ -595,17 +596,17 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Nachos<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$8.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Frijoles y queso, crema.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Super Nachos<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Pollo o res, con lechuga, pico de gallo, crema y guacamole.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Fajita Nachos<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$17.95</span>
@@ -621,52 +622,52 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Torta<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$12.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Gran sándwich mexicano a elegir de jamón, pollo, puerco o res, con lechuga, tomate, cebolla, aguacate y jalapeño.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Tamal<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$4.00</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">A elegir de pollo, res o puerco. También por docena, $30 congelados.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Tostada<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$8.00</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">A elegir de frijol, pollo o res, con lechuga, tomate, cebolla, cilantro, crema y queso.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Enchilada<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$4.00</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">A elegir de pollo, res o queso, en salsa roja, verde o ranchera. Salsa blanca $4.50.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Chile Relleno<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$9.00</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Chile poblano relleno de queso, bañado en salsa ranchera.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Tacos<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$4.00</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Asada, adobada, birria, pollo deshebrado, pollo asado, res deshebrada, carne molida, chorizo (lengua, al pastor $4.50). Con lechuga, tomate, cebolla y cilantro.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Quesataco<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$5.50</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Taco de Tortilla de Harina<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$5.50</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Taco de Pescado o Camarón<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$5.50</span>
       </div>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Taco de Harina de Pescado o Camarón<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$6.50</span>
@@ -682,17 +683,17 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     <p class="text-sm text-ink/60 italic mb-2 max-w-3xl leading-snug">Elige entre enchilada, taco o tamal.</p>
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">A Elegir Uno</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$10.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Una enchilada, taco o tamal. Cambia a tostada por $11.95.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">A Elegir Dos</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$12.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Dos de enchilada, taco o tamal. Cambia a tostada por $13.95.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">A Elegir Tres</h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$15.95</span>
@@ -708,12 +709,12 @@ tailwind.config = { theme: { extend: {
       <a href="#top" class="shrink-0 text-ink/40 hover:text-chili w-5 h-5" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
     </div>
     
-    <div class="grid sm:grid-cols-2 gap-x-12"><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    <div class="grid sm:grid-cols-2 gap-x-12"><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Caldo de Res<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$17.95</span>
       </div><p class="text-[13.5px] text-ink/60 mt-1 leading-snug">Caldo de res con verduras, servido con arroz y tortillas.</p>
-    </div><div class="py-3 border-b border-ink/10 break-inside-avoid">
+    </div><div class="mitem py-3 border-b border-ink/10 break-inside-avoid">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-semibold text-ink leading-snug">Pozole<sup class="text-chili font-bold ml-0.5">*</sup></h3>
         <span class="font-display text-chili text-[15px] whitespace-nowrap">$17.95</span>
@@ -761,4 +762,27 @@ tailwind.config = { theme: { extend: {
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var input=document.getElementById('menuSearch');
+  var clearBtn=document.getElementById('menuClear');
+  var noRes=document.getElementById('menuNoResults');
+  if(!input) return;
+  var items=[].slice.call(document.querySelectorAll('.mitem'));
+  var secs=[].slice.call(document.querySelectorAll('.menusec'));
+  function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+  items.forEach(function(it){ it.setAttribute('data-s', norm(it.textContent)); });
+  function apply(){
+    var q=norm(input.value.trim());
+    clearBtn.classList.toggle('hidden', input.value.length===0);
+    if(!q){ items.forEach(function(it){it.style.display='';}); secs.forEach(function(s){s.style.display='';}); noRes.classList.add('hidden'); return; }
+    var any=false;
+    items.forEach(function(it){ var m=it.getAttribute('data-s').indexOf(q)>-1; it.style.display=m?'':'none'; if(m) any=true; });
+    secs.forEach(function(s){ var shown=[].slice.call(s.querySelectorAll('.mitem')).some(function(v){return v.style.display!=='none';}); s.style.display=shown?'':'none'; });
+    noRes.classList.toggle('hidden', any);
+  }
+  input.addEventListener('input', apply);
+  clearBtn.addEventListener('click', function(){ input.value=''; apply(); input.focus(); });
+})();
+</script>
 </body></html>
